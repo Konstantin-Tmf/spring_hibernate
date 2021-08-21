@@ -17,10 +17,13 @@ public class MainApp {
         UserService userService = context.getBean(UserService.class);
         userService.add(new User("Ivan", "Ivanov", "ivanov@mail.ru",
                 new Car("Mercedes", 600)));
+
         userService.add(new User("Vladimir", "Alexandrov", "alexandrov@mail.ru",
                 new Car("Lexus", 300)));
-        userService.add(new User("Veronika", "Sergeeva", "sergeeva@mail.ru",
-                new Car("BMW", 320)));
+
+        userService.add(new User("Veronica", "Sergeeva", "sergeeva@mail.ru",
+                new Car("BMW", 520)));
+
         userService.add(new User("Alejandra", "Moreno Viera", "moreno_viera@mail.ru",
                 new Car("Audi", 6)));
 
@@ -36,7 +39,6 @@ public class MainApp {
             System.out.println("Series = " + user.getCar().getSeries());
             System.out.println();
         }
-
 
 
         context.close();
